@@ -1,0 +1,22 @@
+[2017-06-11 20:01:24] local.ERROR: exception 'ReflectionException' with message 'Class MahasiswasSeeder does not exist' in D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Container\Container.php:734
+Stack trace:
+#0 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Container\Container.php(734): ReflectionClass->__construct('MahasiswasSeede...')
+#1 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Container\Container.php(629): Illuminate\Container\Container->build('MahasiswasSeede...', Array)
+#2 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(697): Illuminate\Container\Container->make('MahasiswasSeede...', Array)
+#3 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(55): Illuminate\Foundation\Application->make('MahasiswasSeede...')
+#4 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(39): Illuminate\Database\Seeder->resolve('MahasiswasSeede...')
+#5 D:\Laravel\laravelangular\database\seeds\DatabaseSeeder.php(15): Illuminate\Database\Seeder->call('MahasiswasSeede...')
+#6 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php(63): DatabaseSeeder->run()
+#7 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2314): Illuminate\Database\Console\Seeds\SeedCommand->Illuminate\Database\Console\Seeds\{closure}()
+#8 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php(64): Illuminate\Database\Eloquent\Model::unguarded(Object(Closure))
+#9 [internal function]: Illuminate\Database\Console\Seeds\SeedCommand->fire()
+#10 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Container\Container.php(507): call_user_func_array(Array, Array)
+#11 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Console\Command.php(169): Illuminate\Container\Container->call(Array)
+#12 D:\Laravel\laravelangular\vendor\symfony\console\Command\Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Console\Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\Laravel\laravelangular\vendor\symfony\console\Application.php(794): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\Laravel\laravelangular\vendor\symfony\console\Application.php(186): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Seeds\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\Laravel\laravelangular\vendor\symfony\console\Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 D:\Laravel\laravelangular\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 D:\Laravel\laravelangular\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 {main}  
